@@ -1,0 +1,45 @@
+
+
+  .my-page{
+   background-color: aqua;
+  }
+
+  body { 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+
+  #main-header{
+    margin-top: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: normal;
+      font-size: larger;
+      color: brown;
+      font-weight: bold;
+      text-align: center;
+      border: 3px solid green;
+      
+  }
+
+
+img { 
+    margin-top: 50px;
+    border: 1px solid #b5a2e7;
+    display: block;;
+    border-radius: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p{
+  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: small;
+    color: black;
+    font-weight: initial;
+    line-height: 2.0;
+    text-align: justify;
+  }
