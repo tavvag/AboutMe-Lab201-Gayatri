@@ -1,6 +1,6 @@
 "use strict";
 //Variable declarations for questions
-var responseTextForYesNo = "Reply with Yes or No";
+var responseTextForYesNo = " Reply with Yes or No";
 var questionOnCoding ="Can you guess if I love coding !";
 var questionOnTimeAtWork="Can you guess if I spend most of my time at work";
 var questionOnWhatIEnjoyDoing= "Can you guess When not working I spent my time with my 2 year old";
@@ -13,36 +13,25 @@ var invalidResponse = "Incorrect entry ,please answer with a yes or No";
 var yes = "YES";
 var no ="NO";
 
-//varible declarations for Answers received from user
-var answerToCoding = prompt(questionOnCoding + " " +responseTextForYesNo);
-alert(validateAnswer(answerToCoding,yes,no));
-console.log(questionOnCoding + " :" + answerToCoding);
+var questions =[ questionOnCoding,questionOnTimeAtWork,
+    questionOnWhatIEnjoyDoing,questionOnCooking,
+    questionOnSeattleweather];
+ 
+    var correctAnswer =[yes,no,yes,yes,no];
+    var wrongAnswer =[no,yes,no,no,yes];
+    var i;
 
-var answerToTimeAtWork = prompt(questionOnTimeAtWork + " " +responseTextForYesNo);
-alert(validateAnswer(answerToTimeAtWork,no,yes));
-console.log(questionOnTimeAtWork + " :" + answerToTimeAtWork);
-
-var answerToWhatIEnjoyDoing = prompt(questionOnWhatIEnjoyDoing + " " +responseTextForYesNo);
-alert(validateAnswer(answerToWhatIEnjoyDoing,yes,no));
-console.log(questionOnWhatIEnjoyDoing + " :" + answerToWhatIEnjoyDoing);
-
-var answerToCooking = prompt(questionOnCooking + " " +responseTextForYesNo);
-alert(validateAnswer(answerToCooking,yes,no));
-console.log(questionOnCooking + " :" + answerToCooking);
-
-var answerToSeattleweather = prompt(questionOnSeattleweather + " " +responseTextForYesNo);
-alert(validateAnswer(answerToSeattleweather,no,yes));
-console.log(questionOnSeattleweather + " :" + answerToSeattleweather);
-//
-
-function validateAnswer(userResponse,correctAnswer,incorrectAnswer){
-    if(userResponse.toUpperCase() === correctAnswer ){
-        return replyyesText;
-    }else if(userResponse.toUpperCase() === incorrectAnswer){
-        return replyNotext;
-    }else{
-        return invalidResponse;
+    for (i = 0; i < questions.length; i++) { 
+        var answerToQuestion = prompt(questions[i] + " " +responseTextForYesNo);
+        if(answerToQuestion.toUpperCase() === correctAnswer[i] ){
+            alert(replyyesText);
+        }else if(answerToQuestion.toUpperCase() === wrongAnswer[i]){
+            alert(replyNotext);
+        }else{
+            alert(invalidResponse);
+        }
+       
     }
-}
+
 
 

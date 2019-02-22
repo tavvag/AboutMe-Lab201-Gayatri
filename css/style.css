@@ -43,3 +43,13 @@ img {
     line-height: 2.0;
     text-align: justify;
   }
+  ol{
+  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: small;
+    color: black;
+    font-weight: initial;
+    line-height: 2.0;
+    text-align: justify;
+  }
