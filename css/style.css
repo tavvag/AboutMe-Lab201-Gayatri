@@ -43,7 +43,7 @@ img {
     line-height: 2.0;
     text-align: justify;
   }
-  ol{
+  ul{
   
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
@@ -52,4 +52,11 @@ img {
     font-weight: initial;
     line-height: 2.0;
     text-align: justify;
+    margin-left: 10px;
+  }
+
+  h3{
+    font-family:'Courier New', Courier, monospace;
+    color:magenta;
+    margin-top: 20px;
   }
